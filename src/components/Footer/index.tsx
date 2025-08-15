@@ -1,5 +1,5 @@
 export const Footer = () => (
-  <footer className="flex justify-between p-6 text-2xl font-bold text-white bg-purple-950">
+  <footer className="flex justify-between p-1 text-xs font-bold text-white md:p-6 md:text-2xl bg-purple-950">
     <div>© 2025 by Steve McGarvie.</div>
     <div className="flex flex-row">
       <div>Some icons lol</div>
