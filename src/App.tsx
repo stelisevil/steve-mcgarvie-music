@@ -4,9 +4,9 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
 // TODO
-// Routing
 // React-query?
 // React-hook-form?
+// custom colours - dark-brand: 2c2c44, light-brand: d3d5ff
 // fonts - already downloaded - look in the chrome downloads folder.
 
 function App() {

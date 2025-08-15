@@ -1,0 +1,10 @@
+export { About } from "./About";
+export { Bands } from "./Bands";
+export { Choir } from "./Choir";
+export { ChoralArrangements } from "./ChoralArrangements";
+export { Home } from "./Home";
+export { Music } from "./Music";
+export { PopArrangements } from "./PopArrangements";
+export { Rehearsal } from "./Rehearsal";
+export { SaxArrangements } from "./SaxArrangements";
+export { Tuition } from "./Tuition";
