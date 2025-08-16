@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { useClickOutside } from "../../utils/useClickOutside";
 import { Dropdown } from "./Dropdown";
+import { MenuLink } from "./MenuLink";
 
 export type MenuTitles = "Choir" | "Music" | "About";
 
@@ -67,11 +68,3 @@ export const Header = () => {
     </header>
   );
 };
-
-type MenuLinkProps = { to: string; children: string };
-
-const MenuLink = ({ to, children }: MenuLinkProps) => (
-  <Link className="hover:text-brand-light" to={to}>
-    {children}
-  </Link>
-);
