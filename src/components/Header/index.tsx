@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { useClickOutside } from "../../utils/useClickOutside";
+import { Dropdown } from "./Dropdown";
 
-type MenuTitles = "Choir" | "Music" | "About";
+export type MenuTitles = "Choir" | "Music" | "About";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState<MenuTitles | null>(null);
@@ -22,7 +23,11 @@ export const Header = () => {
           Steve McGarvie <span className="text-brand-light">Music</span>
         </div>
         <div ref={ref} className="flex flex-row gap-1 shrink-0">
-          <Link to="/" onClick={() => setMenuOpen(null)}>
+          <Link
+            className="hover:underline hover:text-brand-light"
+            to="/"
+            onClick={() => setMenuOpen(null)}
+          >
             Home
           </Link>
           -
@@ -31,10 +36,8 @@ export const Header = () => {
             menuOpen={menuOpen}
             handleMenuState={handleMenuState}
           >
-            <Link className="flex" to="/choir">
-              Choir Information
-            </Link>
-            <Link to="/choir/rehearsal">Rehearsal Space</Link>
+            <MenuLink to="/choir">Choir Information</MenuLink>
+            <MenuLink to="/choir/rehearsal">Rehearsal Space</MenuLink>
           </Dropdown>
           -
           <Dropdown
@@ -42,10 +45,12 @@ export const Header = () => {
             menuOpen={menuOpen}
             handleMenuState={handleMenuState}
           >
-            <Link to="/music">Request / Purchase</Link>
-            <Link to="/music/choral-arrangements">Choral Arrangements</Link>
-            <Link to="/music/pop-arrangements">Pop Arrangements</Link>
-            <Link to="/music/sax-arrangements">Sax Arrangements</Link>
+            <MenuLink to="/music">Request / Purchase</MenuLink>
+            <MenuLink to="/music/choral-arrangements">
+              Choral Arrangements
+            </MenuLink>
+            <MenuLink to="/music/pop-arrangements">Pop Arrangements</MenuLink>
+            <MenuLink to="/music/sax-arrangements">Sax Arrangements</MenuLink>
           </Dropdown>
           -
           <Dropdown
@@ -53,9 +58,9 @@ export const Header = () => {
             menuOpen={menuOpen}
             handleMenuState={handleMenuState}
           >
-            <Link to="/about">Biography</Link>
-            <Link to="/about/bands">Bands</Link>
-            <Link to="/about/tuition">Tuition</Link>
+            <MenuLink to="/about">Biography</MenuLink>
+            <MenuLink to="/about/bands">Bands</MenuLink>
+            <MenuLink to="/about/tuition">Tuition</MenuLink>
           </Dropdown>
         </div>
       </div>
@@ -63,35 +68,10 @@ export const Header = () => {
   );
 };
 
-type DropdownProps = {
-  title: MenuTitles;
-  menuOpen: MenuTitles | null;
-  handleMenuState: (arg: MenuTitles) => void;
-  children: React.ReactNode;
-};
+type MenuLinkProps = { to: string; children: string };
 
-const Dropdown = ({
-  title,
-  menuOpen,
-  handleMenuState,
-  children,
-}: DropdownProps) => {
-  const isOpen = menuOpen === title;
-  return (
-    <div className="relative">
-      <button
-        className="cursor-pointer"
-        onClick={() => {
-          handleMenuState(title);
-        }}
-      >
-        {title}
-      </button>
-      {isOpen && (
-        <div className="absolute right-0 flex flex-col gap-2 p-4 text-right border-2 border-brand-light bg-brand-dark whitespace-nowrap">
-          {children}
-        </div>
-      )}
-    </div>
-  );
-};
+const MenuLink = ({ to, children }: MenuLinkProps) => (
+  <Link className="hover:text-brand-light" to={to}>
+    {children}
+  </Link>
+);
