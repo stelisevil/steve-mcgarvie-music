@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import type { MenuTitles } from ".";
+import type { MenuTitles } from "..";
 
 type DropdownProps = {
   title: MenuTitles;
