@@ -13,7 +13,7 @@ import {
 } from "../../pages";
 
 export const Body = () => (
-  <div className="flex justify-between flex-1 p-6 text-base font-normal text-black">
+  <div className="flex justify-between flex-1 text-base font-normal text-black">
     <Routes>
       <Route index element={<Home />} />
       <Route path="/choir/rehearsal" element={<Rehearsal />} />

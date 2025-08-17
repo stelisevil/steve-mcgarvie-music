@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { useClickOutside } from "../../utils/useClickOutside";
-import { Dropdown } from "./Dropdown";
 import { MenuLink } from "./MenuLink";
+import { Dropdown } from "./Dropdown";
 
 export type MenuTitles = "Choir" | "Music" | "About";
 
