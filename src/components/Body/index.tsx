@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Navigate, Route, Routes } from "react-router";
 import {
   About,
   Bands,
@@ -28,6 +28,7 @@ export const Body = () => (
       <Route path="/about/bands" element={<Bands />} />
       <Route path="/about/tuition" element={<Tuition />} />
       <Route path="/about" element={<About />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </div>
 );

@@ -27,17 +27,17 @@ export const Music = () => (
 
       <div className="flex flex-row flex-wrap justify-center gap-4">
         <ButtonImageLink
-          to="/choir"
+          to="/music/choral-arrangements"
           imagePath="choral-arrangements.png"
           buttonText="Choral Arrangements"
         />
         <ButtonImageLink
-          to="/music"
+          to="/music/pop-arrangements"
           imagePath="music.png"
           buttonText="Pop Arrangements"
         />
         <ButtonImageLink
-          to="/about/bands"
+          to="/music/sax-arrangements"
           imagePath=""
           buttonText="Sax Arrangements"
         />
