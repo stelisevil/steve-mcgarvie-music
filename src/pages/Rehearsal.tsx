@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import wellVersed from "../../public/well-versed.png";
+import wellVersed from "/well-versed.png";
 
 export const Rehearsal = () => (
   <div className="w-full">

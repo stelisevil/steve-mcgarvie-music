@@ -5,6 +5,21 @@
   --color-brand-dark: #2c2c44;
 }
 
+@font-face {
+  font-family: "KantumruyPro";
+  src: url("/src/fonts/KantumruyPro-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KantumruyPro";
+  src: url("/src/fonts/KantumruyPro-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

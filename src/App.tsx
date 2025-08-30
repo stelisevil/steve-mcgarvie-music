@@ -6,12 +6,10 @@ import { Header } from "./components/Header";
 // TODO
 // React-query?
 // React-hook-form?
-// custom colours - dark-brand: 2c2c44, light-brand: d3d5ff
-// fonts - already downloaded - look in the chrome downloads folder.
 
 function App() {
   return (
-    <div className="flex flex-col min-h-svh md:min-h-screen">
+    <div className="flex flex-col min-h-svh md:min-h-screen font-[KantumruyPro]">
       <Header />
       <Body />
       <Footer />
