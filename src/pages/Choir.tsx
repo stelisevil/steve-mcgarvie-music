@@ -8,14 +8,14 @@ export const Choir = () => (
   <div className="w-full">
     <div
       className={classNames(
-        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-bold",
+        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
         `bg-[url(/hero-images/choir.png)]`
       )}
     >
       <img src={wellVersed} alt="Well-Versed Community Choir Logo" />
     </div>
     <div className="flex flex-col justify-center gap-12 py-12 mx-auto max-w-7xl">
-      <div className="px-8 text-5xl font-bold">Who are we?</div>
+      <div className="px-8 text-5xl font-semibold">Who are we?</div>
       <div className="px-8 text-xl">
         Well-Versed Community Choir is the new name for two choirs who regularly
         join forces to perform, as well as performing in their own right: Sound
@@ -47,7 +47,7 @@ export const Choir = () => (
         Railway, with a larger performance to follow in September at Hopetown
         Museum in Darlington.
       </div>
-      <div className="px-8 text-5xl font-bold">
+      <div className="px-8 text-5xl font-semibold">
         What do we do? Where are we based?
       </div>
       <div className="px-8 text-xl">
@@ -64,7 +64,7 @@ export const Choir = () => (
       </div>
       <div className="flex flex-row flex-wrap justify-between">
         <div className="w-1/2 text-left">
-          <span className="font-bold">Wednesdays:</span>
+          <span className="font-semibold">Wednesdays:</span>
           <div className="mb-4">
             The Studio, <br />
             Stanhope Building, <br />
@@ -75,7 +75,7 @@ export const Choir = () => (
           <img src={wednesdaysMap} />
         </div>
         <div className="w-1/2 text-left">
-          <span className="font-bold">Thursdays:</span>
+          <span className="font-semibold">Thursdays:</span>
           <div className="mb-4">
             Bishop Auckland Methodist Church Hall, <br />
             Cockton Hill Road, <br />
@@ -90,7 +90,7 @@ export const Choir = () => (
         in a choir has many health benefits, promoting good physical, mental and
         emotional wellbeing.
       </div>
-      <div className="px-8 text-5xl font-bold">
+      <div className="px-8 text-5xl font-semibold">
         What does it cost? Do I need to audition?
       </div>
       <div className="px-8 text-xl">
@@ -101,14 +101,14 @@ export const Choir = () => (
         just turn up, pay and sing. As the music used is all written especially
         for the choir there is no charge for expensive sheet music either.
       </div>
-      <div className="px-8 text-5xl font-bold">So how do I join?</div>
+      <div className="px-8 text-5xl font-semibold">So how do I join?</div>
       <div className="px-8 text-xl">
         Fill in the form below, and we'll give you all the details. Rehearsals
         are every Wednesday and Thursday evening (you only need to come to one
         or the other!), but please check, especially during main holiday
         periods.
       </div>
-      <div className="px-8 text-5xl font-bold">Make form here!</div>
+      <div className="px-8 text-5xl font-semibold">Make form here!</div>
     </div>
   </div>
 );

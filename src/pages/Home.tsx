@@ -6,7 +6,7 @@ export const Home = () => (
   <div className="w-full">
     <div
       className={classNames(
-        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-bold",
+        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
         `bg-[url(/hero-images/home.png)]`
       )}
     >
@@ -18,15 +18,15 @@ export const Home = () => (
       <div className="text-2xl/[48px] px-8">
         Welcome to the site! This is the place to find details of all of Steve's
         projects, including{" "}
-        <Link to="/choir" className="font-bold underline">
+        <Link to="/choir" className="font-semibold underline">
           community choirs
         </Link>
         ,{" "}
-        <Link to="/about/tuition" className="font-bold underline">
+        <Link to="/about/tuition" className="font-semibold underline">
           private instrumental teaching
         </Link>{" "}
         and{" "}
-        <Link to="/music" className="font-bold underline">
+        <Link to="/music" className="font-semibold underline">
           musical arrangements
         </Link>{" "}
         for a range of ensembles.

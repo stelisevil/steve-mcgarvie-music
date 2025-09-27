@@ -5,14 +5,14 @@ export const Music = () => (
   <div className="w-full">
     <div
       className={classNames(
-        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-bold",
+        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
         `bg-[url(/hero-images/choir.png)]`
       )}
     >
       Music
     </div>
     <div className="flex flex-col justify-center gap-12 py-12 mx-auto max-w-7xl">
-      <div className="px-8 text-5xl font-bold">
+      <div className="px-8 text-5xl font-semibold">
         Arrangements for your ensemble
       </div>
       <div className="px-8 text-xl">
@@ -42,7 +42,7 @@ export const Music = () => (
           buttonText="Sax Arrangements"
         />
       </div>
-      <div className="px-8 text-5xl font-bold">
+      <div className="px-8 text-5xl font-semibold">
         Request/purchase an arrangement
       </div>
       <div className="px-8 text-xl">
@@ -61,7 +61,7 @@ export const Music = () => (
         If you want the arrangement to be exclusive to your group this can be
         incorporated into the price.
       </div>
-      <div className="px-8 text-5xl font-bold">Webform goes here!!</div>
+      <div className="px-8 text-5xl font-semibold">Webform goes here!!</div>
     </div>
   </div>
 );

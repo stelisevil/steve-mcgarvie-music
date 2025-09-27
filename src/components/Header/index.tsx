@@ -18,7 +18,7 @@ export const Header = () => {
   const ref = useClickOutside<HTMLDivElement>(handleClickOutside);
 
   return (
-    <header className="p-1 text-xs font-bold text-white md:p-6 md:text-2xl bg-brand-dark">
+    <header className="p-1 text-xs font-semibold text-white md:p-6 md:text-2xl bg-brand-dark">
       <div className="flex justify-between mx-auto max-w-7xl">
         <div>
           Steve McGarvie <span className="text-brand-light">Music</span>
