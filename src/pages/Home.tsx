@@ -10,7 +10,7 @@ export const Home = () => (
         `bg-[url(/hero-images/home.png)]`
       )}
     >
-      Choirs, bands, instrumental teaching, bespoke arrangements and more!
+      Choirs, bands, instrumental teaching, bespoke arrangements, and more!
     </div>
     <div className="flex flex-col gap-12 py-12 mx-auto max-w-7xl">
       <div className="text-2xl/[48px] px-8">
