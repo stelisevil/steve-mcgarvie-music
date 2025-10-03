@@ -31,9 +31,7 @@ export const SaxArrangements = () => (
         <thead className="text-white border border-brand-light bg-brand-dark">
           <tr>
             <th className="px-4 py-6 font-semibold">Song title</th>
-            <th className="px-4 py-6 font-semibold">Artist</th>
-            <th className="px-4 py-6 font-semibold">Key</th>
-            <th className="px-4 py-6 font-semibold">Difficulty</th>
+            <th className="px-4 py-6 font-semibold">Composer</th>
             <th className="px-4 py-6 font-semibold">Listen + Buy</th>
           </tr>
         </thead>
@@ -41,22 +39,16 @@ export const SaxArrangements = () => (
           <tr>
             <td className="px-4 py-6">Title here</td>
             <td className="px-4 py-6">Artist here</td>
-            <td className="px-4 py-6">Em</td>
-            <td className="px-4 py-6">Hard</td>
             <td className="px-4 py-6 underline">Link</td>
           </tr>
           <tr>
             <td className="px-4 py-6">Title here</td>
             <td className="px-4 py-6">Artist here</td>
-            <td className="px-4 py-6">Em</td>
-            <td className="px-4 py-6">Hard</td>
             <td className="px-4 py-6 underline">Link</td>
           </tr>
           <tr>
             <td className="px-4 py-6">Title here</td>
             <td className="px-4 py-6">Artist here</td>
-            <td className="px-4 py-6">Em</td>
-            <td className="px-4 py-6">Hard</td>
             <td className="px-4 py-6 underline">Link</td>
           </tr>
         </tbody>
