@@ -6,7 +6,7 @@ export const PopArrangements = () => (
     <div
       className={classNames(
         "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
-        `bg-[url(/hero-images/choir.png)]`
+        `bg-[url(/hero-images/pop-arrangements.png)]`
       )}
     >
       Music
