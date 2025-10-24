@@ -21,7 +21,7 @@ export const Choir = () => {
   } = context;
 
   const onSubmit = async (data: FormValues) => {
-    const res = await fetch("/api/send-email", {
+    const res = await fetch("/api/choir-enquiry-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

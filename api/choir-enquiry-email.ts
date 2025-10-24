@@ -1,4 +1,4 @@
-// api/send-email.js
+// api/choir-request-email.js
 
 import nodemailer from "nodemailer";
 
@@ -40,7 +40,7 @@ export default async function handler(req, res) {
       from: `"Portfolio Contact Form" <${process.env.EMAIL_USER}>`, // your Gmail
       to: "ddrstel@gmail.com", // you receive it here
       replyTo: email, // 👈 user’s email from the form
-      subject: `New message from ${name}`,
+      subject: `Choir Enquiry: ${name}`,
       text: `
     You received a new message from your portfolio contact form:
 
