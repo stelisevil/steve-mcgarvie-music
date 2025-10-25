@@ -53,12 +53,12 @@ export default async function handler(req, res) {
   try {
     // Send email
     await transporter.sendMail({
-      from: `"Portfolio Contact Form" <${process.env.EMAIL_USER}>`, // your Gmail
+      from: `"Website Contact Form" <${process.env.EMAIL_USER}>`, // your Gmail
       to: "ddrstel@gmail.com", // you receive it here
       replyTo: email, // 👈 user’s email from the form
       subject: `Arrangement Enquiry: ${name}`,
       text: `
-    You received a new message from your portfolio contact form:
+    You received a new message regarding an arrangement enquiry:
 
     Name: ${name}
     Email: ${email}
