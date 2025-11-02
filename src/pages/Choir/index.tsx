@@ -1,15 +1,15 @@
 import classNames from "classnames";
 import { Link } from "react-router";
 
-import wellVersed from "../../public/well-versed.png";
-import wednesdaysMap from "../../public/wednesdays-map.png";
-import thursdaysMap from "../../public/thursdays-map.png";
-import { Button } from "../components/Button";
-import { TextInput } from "../components/TextInput";
+import wellVersed from "../../../public/well-versed.png";
+import wednesdaysMap from "../../../public/wednesdays-map.png";
+import thursdaysMap from "../../../public/thursdays-map.png";
+import { Button } from "../../components/Button";
+import { TextInput } from "../../components/TextInput";
 import { useChoirForm, type FormValues } from "./useChoirForm";
-import { FormLayout } from "../components/FormLayout";
-import { Select } from "../components/Select";
-import { Textarea } from "../components/Textarea";
+import { FormLayout } from "../../components/FormLayout";
+import { Select } from "../../components/Select";
+import { Textarea } from "../../components/Textarea";
 
 export const Choir = () => {
   const { context } = useChoirForm();

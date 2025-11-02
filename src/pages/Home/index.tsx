@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link } from "react-router";
-import { ButtonImageLink } from "../components/ButtonImageLink";
+import { ButtonImageLink } from "../../components/ButtonImageLink";
 
 export const Home = () => (
   <div className="w-full">

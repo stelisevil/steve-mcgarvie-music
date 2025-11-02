@@ -18,7 +18,6 @@ export const Rehearsal = () => (
         resources, including audio tracks for individual parts of songs we are
         currently rehearsing.
       </div>
-      <div className="px-8 text-5xl font-semibold">Music player goes here!</div>
     </div>
   </div>
 );

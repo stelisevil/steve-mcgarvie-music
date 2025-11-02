@@ -1,11 +1,11 @@
 import classNames from "classnames";
-import { ButtonImageLink } from "../components/ButtonImageLink";
-import { TextInput } from "../components/TextInput";
-import { FormLayout } from "../components/FormLayout";
+import { ButtonImageLink } from "../../components/ButtonImageLink";
+import { TextInput } from "../../components/TextInput";
+import { FormLayout } from "../../components/FormLayout";
 import { useArrangementForm, type FormValues } from "./useArrangementForm";
-import { Select } from "../components/Select";
-import { Button } from "../components/Button";
-import { Textarea } from "../components/Textarea";
+import { Select } from "../../components/Select";
+import { Button } from "../../components/Button";
+import { Textarea } from "../../components/Textarea";
 
 export const Music = () => {
   const { context } = useArrangementForm();

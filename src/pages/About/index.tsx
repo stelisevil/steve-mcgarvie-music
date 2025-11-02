@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { ButtonImageLink } from "../components/ButtonImageLink";
+import { ButtonImageLink } from "../../components/ButtonImageLink";
 
 export const About = () => (
   <div className="w-full">

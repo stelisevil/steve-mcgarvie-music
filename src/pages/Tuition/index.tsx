@@ -1,8 +1,8 @@
 import classNames from "classnames";
-import { FormLayout } from "../components/FormLayout";
-import { TextInput } from "../components/TextInput";
-import { Textarea } from "../components/Textarea";
-import { Button } from "../components/Button";
+import { FormLayout } from "../../components/FormLayout";
+import { TextInput } from "../../components/TextInput";
+import { Textarea } from "../../components/Textarea";
+import { Button } from "../../components/Button";
 import { useTuitionForm, type FormValues } from "./useTuitionForm";
 
 export const Tuition = () => {
