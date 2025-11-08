@@ -17,8 +17,16 @@ export const Bands = () => (
         bands listed below:
       </div>
 
-      <div className="h-80 w-[480px] bg-gray-300">
-        temp image for youtube embed
+      <div className="flex justify-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Go3oojnulkM?si=aWj357dkm-Opavya"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
 
       <div className="px-8 text-5xl font-semibold">The Smokin' Spitfires</div>
@@ -51,8 +59,10 @@ export const Bands = () => (
         .
       </div>
 
-      <div className="h-80 w-[480px] bg-gray-300">
-        temp image for youtube embed
+      <div className="flex justify-center">
+        <div className="h-80 w-[480px] bg-gray-300">
+          temp image for youtube embed
+        </div>
       </div>
 
       <div className="px-8 text-5xl font-semibold">

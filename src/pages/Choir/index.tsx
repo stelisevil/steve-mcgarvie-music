@@ -57,9 +57,13 @@ export const Choir = () => {
           choirs, under their former names, have performed many public concerts,
           raising well over £10,000 for local and national charities.
         </div>
-        <div className="h-80 w-[480px] bg-gray-300">
-          temp image for youtube embed
+
+        <div className="flex justify-center">
+          <div className="h-80 w-[480px] bg-gray-300">
+            temp image for youtube embed
+          </div>
         </div>
+
         <div className="px-8 text-xl">
           Our first concert as Well-Versed was on Saturday, May 11th 2024 at
           Hummersknott Academy in Darlington, and we were delighted to have
@@ -93,27 +97,44 @@ export const Choir = () => {
         <div className="px-8 text-xl">
           We rehearse each Wednesday and Thursday evening from 7.30-9.30:
         </div>
-        <div className="flex flex-row flex-wrap justify-between">
-          <div className="w-1/2 text-left">
+        <div className="flex flex-col flex-wrap justify-between gap-8 md:flex-row">
+          <div className="text-left grow">
             <span className="font-semibold">Wednesdays:</span>
             <div className="mb-4">
               The Studio, <br />
               Stanhope Building, <br />
               Queen Elizabeth Sixth Form College, <br />
               Vane Terrace, <br />
-              Darlington DL3 7AU
+              Darlington DL3 7AU <br />
             </div>
-            <img src={wednesdaysMap} />
+            <div className="relative w-full pb-[75%]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1120.0442517239599!2d-1.566289698966879!3d54.52589841963848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e9bc242853ab5%3A0x9815b66e3b46d60f!2sQueen%20Elizabeth%20Sixth%20Form%20College!5e0!3m2!1sen!2suk!4v1762111497578!5m2!1sen!2suk"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <div className="w-1/2 text-left">
+          <div className="text-left grow">
             <span className="font-semibold">Thursdays:</span>
             <div className="mb-4">
               Bishop Auckland Methodist Church Hall, <br />
               Cockton Hill Road, <br />
               Bishop Auckland <br />
-              DL14 7NP (Opposite the hospital).
+              DL14 7NP (Opposite the hospital). <br />
+              <br />
             </div>
-            <img src={thursdaysMap} />
+            <div className="relative w-full pb-[75%]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.400647332485!2d-1.6801335401884243!3d54.65583674219654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e824384e07bef%3A0x7ed389414a003631!2sBishop%20Auckland%20Methodist%20Church!5e0!3m2!1sen!2suk!4v1762111823154!5m2!1sen!2suk"
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div className="px-8 text-xl">
