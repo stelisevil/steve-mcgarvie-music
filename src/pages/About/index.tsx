@@ -66,7 +66,7 @@ export const About = () => (
         comfortable working with all ages and in many styles such as classical,
         jazz and popular music, and lessons can be tailored to work towards
         formal qualifications or playing just for fun. For further details,
-        click 
+        click{" "}
         <a href="/about/tuition" className="underline">
           here
         </a>
