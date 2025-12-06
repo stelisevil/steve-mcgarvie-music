@@ -6,37 +6,12 @@ import {
   type TrackFolder,
 } from "../../services/getChoirTracks";
 import { ChoirPlayer } from "./ChoirPlayer";
-import { supabase } from "../../utils/supabaseClient";
 
 export const Rehearsal = () => {
   const [tracks, setTracks] = useState<TrackFolder[]>([]);
 
   useEffect(() => {
     getChoirTracks().then(setTracks);
-  }, []);
-
-  console.log(
-    import.meta.env.VITE_SUPABASE_URL,
-    import.meta.env.VITE_SUPABASE_ANON_KEY,
-    "hello world"
-  );
-
-  useEffect(() => {
-    (async () => {
-      console.log("Bucket exists?");
-      const buckets = await supabase.storage.listBuckets();
-      console.log(buckets);
-
-      console.log("List root:");
-      const root = await supabase.storage.from("choir-tracks").list("");
-      console.log(root);
-
-      console.log("List 'choir-tracks' folder:");
-      const inside = await supabase.storage
-        .from("choir-tracks")
-        .list("choir-tracks");
-      console.log(inside);
-    })();
   }, []);
 
   return (

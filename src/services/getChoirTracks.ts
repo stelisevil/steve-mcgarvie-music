@@ -19,8 +19,7 @@ export async function getChoirTracks(): Promise<TrackFolder[]> {
   if (folderError) throw folderError;
 
   // Filter to keep only folder entries (type === 'folder')
-  const folderNames =
-    folders?.filter((item) => item.id && item.name)?.map((f) => f.name) || [];
+  const folderNames = folders?.map((f) => f.name) || [];
 
   const result: TrackFolder[] = [];
 
