@@ -35,7 +35,7 @@ export const PopArrangements = () => {
           arrangement will be given soon after. * PLEASE NOTE: Samples coming
           soon *
         </div>
-        <table className="text-left border border-brand-light">
+        {/* <table className="text-left border border-brand-light">
           <thead className="text-white border border-brand-light bg-brand-dark">
             <tr>
               <th className="px-4 py-6 font-semibold">Song title</th>
@@ -60,7 +60,7 @@ export const PopArrangements = () => {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
         <RequestASongLink />
       </div>
     </div>

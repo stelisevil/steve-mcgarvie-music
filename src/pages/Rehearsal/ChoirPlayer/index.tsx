@@ -5,7 +5,7 @@ interface ChoirPlayerProps {
   url: string;
 }
 
-export function ChoirPlayer({ url }: ChoirPlayerProps) {
+export const ChoirPlayer = ({ url }: ChoirPlayerProps) => {
   return (
     <AudioPlayer
       src={url}
@@ -15,4 +15,4 @@ export function ChoirPlayer({ url }: ChoirPlayerProps) {
       customVolumeControls={[]}
     />
   );
-}
+};

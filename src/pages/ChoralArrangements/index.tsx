@@ -71,7 +71,7 @@ export const ChoralArrangements = () => {
           Songs with backing tracks
         </div>
 
-        <table className="text-left border border-brand-light">
+        {/* <table className="text-left border border-brand-light">
           <thead className="text-white border border-brand-light bg-brand-dark">
             <tr>
               <th className="px-4 py-6 font-semibold">Song title</th>
@@ -96,7 +96,7 @@ export const ChoralArrangements = () => {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
         <RequestASongLink />
       </div>
     </div>

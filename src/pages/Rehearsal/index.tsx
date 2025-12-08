@@ -32,18 +32,24 @@ export const Rehearsal = () => {
           currently rehearsing.
         </div>
       </div>
-      {tracks.map(({ folder, files }) => (
-        <div key={folder} style={{ marginBottom: "3rem" }}>
-          <h2>{folder.replace(/-/g, " ")}</h2>
+      <div className="px-8">
+        {tracks.map(({ folder, files }) => (
+          <div key={folder} className="mb-12">
+            <h3 className="mb-2 text-2xl font-bold text-left">
+              {folder.replace(/-/g, " ")}
+            </h3>
 
-          {files.map((file) => (
-            <div key={file.name} style={{ marginBottom: "1.5rem" }}>
-              <h4>{file.name.replace(".mp3", "")}</h4>
-              <ChoirPlayer url={file.url} />
-            </div>
-          ))}
-        </div>
-      ))}
+            {files.map((file) => (
+              <div key={file.name} className="mb-6">
+                <h4 className="mb-2 text-lg font-medium text-left">
+                  {file.name.replace(".mp3", "")}
+                </h4>
+                <ChoirPlayer url={file.url} />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
