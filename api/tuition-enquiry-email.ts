@@ -39,7 +39,7 @@ export default async function handler(req, res) {
     // Send email
     await transporter.sendMail({
       from: `"Website Contact Form" <${process.env.EMAIL_USER}>`, // your Gmail
-      to: "ddrstel@gmail.com", // you receive it here
+      to: "steve@stevemcgarviemusic.com", // you receive it here
       replyTo: email, // 👈 user’s email from the form
       subject: `Tuition Enquiry: ${name}`,
       text: `
