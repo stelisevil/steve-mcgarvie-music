@@ -8,7 +8,9 @@ export const Footer = () => (
       <div>© 2025 by Steve McGarvie.</div>
       <div className="flex flex-row gap-4">
         <div className="flex flex-row items-center gap-3">
-          <img className="h-8" src={email} alt="email" />
+          <a href="mailto:stevemcgarviemusic.com">
+            <img className="h-8" src={email} alt="email" />
+          </a>
           <img className="h-8" src={facebook} alt="facebook logo" />
           <img className="h-8" src={phone} alt="phone" />
         </div>
