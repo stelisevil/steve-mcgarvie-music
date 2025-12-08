@@ -4,8 +4,7 @@ import { useACapellaSongs } from "./useACapellaSongs";
 import { useBackingSongs } from "./useBackingSongs";
 
 export const ChoralArrangements = () => {
-  const { loading: aCapellaLoading, datoResponse: aCapellaSongs } =
-    useACapellaSongs();
+  const { loading: aCapellaLoading } = useACapellaSongs();
 
   const { loading: backingLoading } = useBackingSongs();
 
@@ -38,7 +37,7 @@ export const ChoralArrangements = () => {
           arrangement will be given soon after. * PLEASE NOTE: Samples coming
           soon *
         </div>
-        <div className="px-8 text-5xl font-semibold">A capella songs</div>
+        {/* <div className="px-8 text-5xl font-semibold">A capella songs</div>
         <table className="text-left border border-brand-light">
           <thead className="text-white border border-brand-light bg-brand-dark">
             <tr>
@@ -70,7 +69,7 @@ export const ChoralArrangements = () => {
           Songs with backing tracks
         </div>
 
-        {/* <table className="text-left border border-brand-light">
+        <table className="text-left border border-brand-light">
           <thead className="text-white border border-brand-light bg-brand-dark">
             <tr>
               <th className="px-4 py-6 font-semibold">Song title</th>
