@@ -3,8 +3,7 @@ import { RequestASongLink } from "../../components/RequestASongLink";
 import { usePopArrangementSongs } from "./usePopArrangementSongs";
 
 export const PopArrangements = () => {
-  const { loading, datoResponse: popArrangementSongs } =
-    usePopArrangementSongs();
+  const { loading } = usePopArrangementSongs();
 
   if (loading) return null;
 

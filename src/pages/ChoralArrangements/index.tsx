@@ -7,8 +7,7 @@ export const ChoralArrangements = () => {
   const { loading: aCapellaLoading, datoResponse: aCapellaSongs } =
     useACapellaSongs();
 
-  const { loading: backingLoading, datoResponse: backingSongs } =
-    useBackingSongs();
+  const { loading: backingLoading } = useBackingSongs();
 
   if (aCapellaLoading || backingLoading) return null;
 

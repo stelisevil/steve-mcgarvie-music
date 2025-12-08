@@ -3,8 +3,7 @@ import { RequestASongLink } from "../../components/RequestASongLink";
 import { useSaxArrangementSongs } from "./useSaxArrangementSongs";
 
 export const SaxArrangements = () => {
-  const { loading, datoResponse: saxArrangementSongs } =
-    useSaxArrangementSongs();
+  const { loading } = useSaxArrangementSongs();
 
   if (loading) return null;
 
