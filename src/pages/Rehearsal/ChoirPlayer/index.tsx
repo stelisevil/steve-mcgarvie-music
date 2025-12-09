@@ -9,6 +9,7 @@ export const ChoirPlayer = ({ url }: ChoirPlayerProps) => {
   return (
     <AudioPlayer
       src={url}
+      preload="none"
       autoPlay={false}
       showJumpControls={true}
       customAdditionalControls={[]}
