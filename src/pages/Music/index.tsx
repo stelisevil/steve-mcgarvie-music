@@ -68,7 +68,7 @@ export const Music = () => {
           />
           <ButtonImageLink
             to="/music/sax-arrangements"
-            imagePath=""
+            imagePath="sax-arrangements.jpg"
             buttonText="Sax Arrangements"
           />
         </div>
