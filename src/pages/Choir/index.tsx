@@ -87,7 +87,7 @@ export const Choir = () => {
           The Community Choirs perform mainly bespoke arrangements and
           specialise in rock, pop, soul and jazz music, both a cappella and with
           backing tracks. To see a list of songs already performed, click{" "}
-          <Link to="/choral-arrangements" className="underline">
+          <Link to="/music/choral-arrangements" className="underline">
             here
           </Link>{" "}
           to view our choral arrangements.
