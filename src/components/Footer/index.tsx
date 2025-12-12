@@ -11,11 +11,19 @@ export const Footer = () => (
           <a href="mailto:steve@stevemcgarviemusic.com">
             <img className="h-8" src={email} alt="email" />
           </a>
-          <img className="h-8" src={facebook} alt="facebook logo" />
-          <img className="h-8" src={phone} alt="phone" />
+          <a
+            href="http://facebook.com/profile.php?id=61558071397513"
+            target="_blank"
+          >
+            <img className="h-8" src={facebook} alt="facebook logo" />
+          </a>
+          <a href="tel:07817062951">
+            <img className="h-8" src={phone} alt="phone" />
+          </a>
         </div>
         <div>
-          07817 062951 <span className="font-normal">(voicemail or text)</span>
+          <a href="tel:07817062951">07817 062951</a>{" "}
+          <span className="font-normal">(voicemail or text)</span>
         </div>
       </div>
     </div>
