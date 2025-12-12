@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import wellVersed from "/well-versed.png";
 import { useEffect, useState } from "react";
 import {
@@ -6,6 +5,7 @@ import {
   type TrackFolder,
 } from "../../services/getChoirTracks";
 import { ChoirPlayer } from "./ChoirPlayer";
+import { HeroBanner } from "../../components/HeroBanner";
 
 export const Rehearsal = () => {
   const [tracks, setTracks] = useState<TrackFolder[]>([]);
@@ -16,14 +16,9 @@ export const Rehearsal = () => {
 
   return (
     <div className="w-full">
-      <div
-        className={classNames(
-          "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
-          `bg-[url(/hero-images/choir.png)]`
-        )}
-      >
+      <HeroBanner imagePath="choir.png">
         <img src={wellVersed} alt="Well-Versed Community Choir Logo" />
-      </div>
+      </HeroBanner>
       <div className="flex flex-col justify-center gap-12 py-12 mx-auto max-w-7xl">
         <div className="px-8 text-5xl font-semibold">Rehearsal Space</div>
         <div className="px-8 text-xl">

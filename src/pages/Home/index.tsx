@@ -1,19 +1,12 @@
-import classNames from "classnames";
 import { Link } from "react-router";
 import { ButtonImageLink } from "../../components/ButtonImageLink";
+import { HeroBanner } from "../../components/HeroBanner";
 
 export const Home = () => (
   <div className="w-full">
-    <div
-      className={classNames(
-        "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
-        `bg-[url(/hero-images/home.png)]`
-      )}
-    >
-      <span className="max-w-7xl">
-        Choirs, bands, instrumental teaching, bespoke arrangements, and more!
-      </span>
-    </div>
+    <HeroBanner imagePath="home.png">
+      Choirs, bands, instrumental teaching, bespoke arrangements, and more!
+    </HeroBanner>
     <div className="flex flex-col gap-12 py-12 mx-auto max-w-7xl">
       <div className="text-2xl/[48px] px-8">
         Welcome to the site! This is the place to find details of all of Steve's

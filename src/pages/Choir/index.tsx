@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import { Link } from "react-router";
 
 import wellVersed from "../../../public/well-versed.png";
@@ -8,6 +7,7 @@ import { useChoirForm, type FormValues } from "./useChoirForm";
 import { FormLayout } from "../../components/FormLayout";
 import { Select } from "../../components/Select";
 import { Textarea } from "../../components/Textarea";
+import { HeroBanner } from "../../components/HeroBanner";
 
 export const Choir = () => {
   const { context } = useChoirForm();
@@ -35,14 +35,9 @@ export const Choir = () => {
 
   return (
     <div className="w-full">
-      <div
-        className={classNames(
-          "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
-          `bg-[url(/hero-images/choir.png)]`
-        )}
-      >
+      <HeroBanner imagePath="choir.png">
         <img src={wellVersed} alt="Well-Versed Community Choir Logo" />
-      </div>
+      </HeroBanner>
       <div className="flex flex-col justify-center gap-12 py-12 mx-auto max-w-7xl">
         <div className="px-8 text-5xl font-semibold">Who are we?</div>
         <div className="px-8 text-xl">

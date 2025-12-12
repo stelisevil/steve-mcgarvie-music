@@ -1,7 +1,7 @@
-import classNames from "classnames";
 import { RequestASongLink } from "../../components/RequestASongLink";
 import { useACapellaSongs } from "./useACapellaSongs";
 import { useBackingSongs } from "./useBackingSongs";
+import { HeroBanner } from "../../components/HeroBanner";
 
 export const ChoralArrangements = () => {
   const { loading: aCapellaLoading } = useACapellaSongs();
@@ -12,14 +12,7 @@ export const ChoralArrangements = () => {
 
   return (
     <div className="w-full">
-      <div
-        className={classNames(
-          "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
-          `bg-[url(/hero-images/music.jpg)]`
-        )}
-      >
-        Music
-      </div>
+      <HeroBanner imagePath="music.jpg">Music</HeroBanner>
       <div className="flex flex-col justify-center gap-12 py-12 mx-auto max-w-7xl">
         <div className="px-8 text-5xl font-semibold">Choral arrangements</div>
         <div className="px-8 text-xl">

@@ -4,6 +4,7 @@ import { TextInput } from "../../components/TextInput";
 import { Textarea } from "../../components/Textarea";
 import { Button } from "../../components/Button";
 import { useTuitionForm, type FormValues } from "./useTuitionForm";
+import { HeroBanner } from "../../components/HeroBanner";
 
 export const Tuition = () => {
   const { context } = useTuitionForm();
@@ -31,14 +32,7 @@ export const Tuition = () => {
 
   return (
     <div className="w-full">
-      <div
-        className={classNames(
-          "h-[550px] bg-cover bg-center text-white text-6xl flex justify-center items-end p-12 font-semibold",
-          `bg-[url(/hero-images/tuition.png)]`
-        )}
-      >
-        Tuition
-      </div>
+      <HeroBanner imagePath="tuition.png">Tuition</HeroBanner>
       <div className="flex flex-col justify-center gap-12 py-12 mx-auto max-w-7xl">
         <div className="px-8 text-5xl font-semibold">
           Instrumental and Music Theory Tuition
