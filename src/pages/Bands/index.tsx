@@ -60,9 +60,15 @@ export const Bands = () => (
       </div>
 
       <div className="flex justify-center">
-        <div className="h-80 w-[480px] bg-gray-300">
-          temp image for youtube embed
-        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/M__dmm1PCI0?si=wWjRTd3oW5xGwa0i"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <div className="px-8 text-5xl font-semibold">
