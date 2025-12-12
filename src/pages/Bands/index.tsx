@@ -51,10 +51,10 @@ export const Bands = () => (
         you wish to book the band please get in touch us via our website at{" "}
         <a
           className="underline"
-          href="http://smokinspitfires.wix.com/smokinspitfires"
+          href="https://smokinspitfires.wixsite.com/smokinspitfires"
           about="_blank"
         >
-          http://smokinspitfires.wix.com/smokinspitfires
+          https://smokinspitfires.wixsite.com/smokinspitfires
         </a>
         .
       </div>
