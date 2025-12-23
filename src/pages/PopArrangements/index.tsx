@@ -22,10 +22,11 @@ export const PopArrangements = () => {
           cost £30 for a PDF download of all parts plus a full score.
         </div>
         <div className="px-8 text-xl">
-          If there is a song you'd like to have arranged, go to the main Music
-          page and fill in your details on the form, when a quote for the
-          arrangement will be given soon after. * PLEASE NOTE: Samples coming
-          soon *
+          We also take requests! If you have a song you'd like arranging, click{" "}
+          <a className="underline" href="/music">
+            here
+          </a>{" "}
+          to make an enquiry.
         </div>
         {/* <table className="text-left border border-brand-light">
           <thead className="text-white border border-brand-light bg-brand-dark">

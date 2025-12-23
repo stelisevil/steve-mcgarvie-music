@@ -69,20 +69,8 @@ export const Music = () => {
           Request/purchase an arrangement
         </div>
         <div className="px-8 text-xl">
-          To purchase an arrangement, please fill in the form below, detailing
-          which arrangement(s) you would like to buy. The amount is £25 per
-          arrangement. Alternatively, if there is a song for your choir or
-          ensemble you'd like Steve to arrange, please complete the form below
-          with the following information: Song title; Original composer/artist;
-          If there is a specific style how you would like the arrangement to
-          sound; The ability level of the performers; Whether the arrangement is
-          to be a cappella or with accompanying parts/backing track (for choral
-          arrangements); The instruments you would like to have within the
-          arrangement. Steve will then contact you with a quote for the
-          arrangement. The price will depend on the complexity of the work, the
-          number of parts required and the potential recording of a backing
-          track. If you want the arrangement to be exclusive to your group this
-          can be incorporated into the price.
+          To purchase an arrangement, please fill in the form below. From choirs
+          to pop bands, or any ensemble of your choice.
         </div>
 
         <form

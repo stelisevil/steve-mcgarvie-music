@@ -96,7 +96,7 @@ export const Choir = () => {
         <div className="px-8 text-xl">
           We rehearse each Wednesday and Thursday evening from 7.30-9.30:
         </div>
-        <div className="flex flex-col flex-wrap justify-between gap-8 md:flex-row">
+        <div className="flex flex-col flex-wrap justify-between gap-8 px-4 md:flex-row">
           <div className="text-left grow">
             <span className="font-semibold">Wednesdays:</span>
             <div className="mb-4">

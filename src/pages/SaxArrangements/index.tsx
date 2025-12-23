@@ -17,14 +17,15 @@ export const SaxArrangements = () => {
         <div className="px-8 text-xl">
           The saxophone quartets are for 2 altos, tenor and baritone unless
           stated otherwise. Most arrangements have sections for improvised
-          solos. The cost for each arrangement is £20, and you will receive PDF
+          solos. The cost for each arrangement is £30, and you will receive PDF
           copies of the full score and the individual parts.
         </div>
         <div className="px-8 text-xl">
-          If there is a song you'd like to have arranged, go to the main Music
-          page and fill in your details on the form, when a quote for the
-          arrangement will be given soon after. * PLEASE NOTE: Samples coming
-          soon *
+          We also take requests! If you have a song you'd like arranging, click{" "}
+          <a className="underline" href="/music">
+            here
+          </a>{" "}
+          to make an enquiry.
         </div>
         {/* <table className="text-left border border-brand-light">
           <thead className="text-white border border-brand-light bg-brand-dark">

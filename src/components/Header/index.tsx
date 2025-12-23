@@ -46,12 +46,14 @@ export const Header = () => {
             menuOpen={menuOpen}
             handleMenuState={handleMenuState}
           >
-            <MenuLink to="/music">Request / Purchase</MenuLink>
+            <MenuLink to="/music">Request/Purchase</MenuLink>
             <MenuLink to="/music/choral-arrangements">
               Choral Arrangements
             </MenuLink>
             <MenuLink to="/music/pop-arrangements">Pop Arrangements</MenuLink>
-            <MenuLink to="/music/sax-arrangements">Sax Arrangements</MenuLink>
+            <MenuLink to="/music/sax-arrangements">
+              Sax Quartet Arrangements
+            </MenuLink>
           </Dropdown>
           -
           <Dropdown
