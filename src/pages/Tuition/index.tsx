@@ -65,7 +65,7 @@ export const Tuition = () => {
         </div>
 
         <form
-          className="flex flex-col items-center justify-center gap-4 p-8"
+          className="flex flex-col items-center justify-center gap-4 px-8"
           onSubmit={handleSubmit(onSubmit)}
         >
           <FormLayout error={errors.name} name="name" label="Name" required>
