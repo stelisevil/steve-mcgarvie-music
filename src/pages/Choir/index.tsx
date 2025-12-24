@@ -74,7 +74,7 @@ export const Choir = () => {
           2025 has been pretty busy for the choir. We performed at the Shine
           Festival at Middlesbrough Town Hall in March, receiving some
           wonderfully positive feedback from choral professionals. In April we
-          sang at Sheldon Civic Hall in front of a packed audience, raising over
+          sang at Shildon Civic Hall in front of a packed audience, raising over
           £1,000 for Shildon Methodist Church's roof repair fund. We will be
           singing in Darlington Town Centre on Saturday, June 7th, performing
           railway-based songs to commemorate the 200th anniversary of the
