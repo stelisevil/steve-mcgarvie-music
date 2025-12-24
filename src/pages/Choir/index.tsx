@@ -96,8 +96,8 @@ export const Choir = () => {
         <div className="px-8 text-xl">
           We rehearse each Wednesday and Thursday evening from 7.30-9.30:
         </div>
-        <div className="flex flex-col flex-wrap justify-between gap-8 px-4 md:flex-row">
-          <div className="text-left grow">
+        <div className="flex flex-col flex-wrap justify-between w-full md:flex-row">
+          <div className="w-full px-4 mb-8 text-left md:w-1/2 md:mb-0">
             <span className="font-semibold">Wednesdays:</span>
             <div className="mb-4">
               The Studio, <br />
@@ -116,14 +116,14 @@ export const Choir = () => {
               ></iframe>
             </div>
           </div>
-          <div className="text-left grow">
+          <div className="w-full px-4 text-left md:w-1/2">
             <span className="font-semibold">Thursdays:</span>
             <div className="mb-4">
               Bishop Auckland Methodist Church Hall, <br />
               Cockton Hill Road, <br />
               Bishop Auckland <br />
               DL14 7NP (Opposite the hospital). <br />
-              <br />
+              <br className="hidden md:block" />
             </div>
             <div className="relative w-full pb-[75%]">
               <iframe
