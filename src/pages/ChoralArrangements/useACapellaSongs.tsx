@@ -16,7 +16,7 @@ type DatoResponseType = {
 };
 
 const query = `{
-  allACapellaSongs {
+  allACapellaSongs(first: "500") {
     songTitle
     artist
     driveUrl
