@@ -6,8 +6,8 @@ import {
   ChoralArrangements,
   Home,
   Music,
+  Password,
   PopArrangements,
-  Rehearsal,
   SaxArrangements,
   Tuition,
 } from "../../pages";
@@ -16,7 +16,7 @@ export const Body = () => (
   <div className="flex justify-between flex-1 text-base font-normal text-black">
     <Routes>
       <Route index element={<Home />} />
-      <Route path="/choir/rehearsal" element={<Rehearsal />} />
+      <Route path="/choir/rehearsal" element={<Password />} />
       <Route path="/choir" element={<Choir />} />
       <Route
         path="/music/choral-arrangements"

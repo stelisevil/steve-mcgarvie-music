@@ -16,7 +16,7 @@ type DatoResponseType = {
 };
 
 const query = `{
-  allSaxArrangementSongs {
+  allSaxArrangementSongs(first: "500") {
     songTitle
     artist
     driveUrl

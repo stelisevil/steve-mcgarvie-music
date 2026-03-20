@@ -6,5 +6,6 @@ export { Home } from "./Home";
 export { Music } from "./Music";
 export { PopArrangements } from "./PopArrangements";
 export { Rehearsal } from "./Rehearsal";
+export { Password } from "./Password";
 export { SaxArrangements } from "./SaxArrangements";
 export { Tuition } from "./Tuition";
