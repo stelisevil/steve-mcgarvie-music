@@ -7,6 +7,14 @@ import {
 import { ChoirPlayer } from "./ChoirPlayer";
 import { HeroBanner } from "../../components/HeroBanner";
 
+const getFileName = (url: string) => {
+  const last = url.split("/").pop() ?? "";
+  return last.split("?")[0];
+};
+
+const getFriendlyFileName = (fileName: string) =>
+  fileName.replace(" AI.mp3", "").split(" ").slice(1).join(" ");
+
 export const Rehearsal = () => {
   const [tracks, setTracks] = useState<TrackFolder[]>([]);
 
@@ -25,6 +33,9 @@ export const Rehearsal = () => {
           This is where members of Well-Versed Community Choir can look for
           resources, including audio tracks for individual parts of songs we are
           currently rehearsing.
+          <br />
+          There is also a download link for each track so you can listen
+          offline.
         </div>
       </div>
       <div className="px-8">
@@ -34,14 +45,26 @@ export const Rehearsal = () => {
               {folder.replace(/-/g, " ")}
             </h3>
 
-            {files.map((file) => (
-              <div key={file.name} className="mb-6">
-                <h4 className="mb-2 text-lg font-medium text-left">
-                  {file.name.replace(".mp3", "")}
-                </h4>
-                <ChoirPlayer url={file.url} />
-              </div>
-            ))}
+            {files.map((file) => {
+              const fileName = getFileName(file.url);
+              const friendlyFileName = getFriendlyFileName(fileName);
+
+              return (
+                <div key={file.name} className="mb-6">
+                  <h4 className="mb-2 text-lg font-medium text-left">
+                    {friendlyFileName} -{" "}
+                    <a
+                      className="text-blue-500 visited:text-purple-700 hover:text-blue-700"
+                      href={`${file.url}?download=${fileName}`}
+                      download={fileName}
+                    >
+                      Download
+                    </a>
+                  </h4>
+                  <ChoirPlayer url={file.url} />
+                </div>
+              );
+            })}
           </div>
         ))}
       </div>
