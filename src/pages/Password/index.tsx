@@ -26,7 +26,7 @@ export const Password = () => {
 
   if (loading) return null;
 
-  if (password === datoResponse || password === "") return <Rehearsal />;
+  if (datoResponse === password || datoResponse === "") return <Rehearsal />;
 
   return (
     <div className="w-full">
