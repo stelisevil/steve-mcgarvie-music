@@ -4,10 +4,12 @@ import {
   Bands,
   Choir,
   ChoralArrangements,
+  ChristmasInHarmony,
   Home,
   Music,
   Password,
   PopArrangements,
+  Rehearsal,
   SaxArrangements,
   Tuition,
 } from "../../pages";
@@ -16,7 +18,22 @@ export const Body = () => (
   <div className="flex justify-between flex-1 text-base font-normal text-black">
     <Routes>
       <Route index element={<Home />} />
-      <Route path="/choir/rehearsal" element={<Password />} />
+      <Route
+        path="/choir/rehearsal"
+        element={
+          <Password>
+            <Rehearsal />
+          </Password>
+        }
+      />
+      <Route
+        path="/choir/christmas-in-harmony"
+        element={
+          <Password>
+            <ChristmasInHarmony />
+          </Password>
+        }
+      />
       <Route path="/choir" element={<Choir />} />
       <Route
         path="/music/choral-arrangements"

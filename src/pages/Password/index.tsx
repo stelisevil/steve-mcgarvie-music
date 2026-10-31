@@ -3,13 +3,16 @@ import { useState } from "react";
 
 import { HeroBanner } from "../../components/HeroBanner";
 import { useGetPassword } from "./useGetPassword";
-import { Rehearsal } from "../Rehearsal";
 import { usePasswordForm, type FormValues } from "./usePasswordForm";
 import { FormLayout } from "../../components/FormLayout";
 import { TextInput } from "../../components/TextInput";
 import { Button } from "../../components/Button";
 
-export const Password = () => {
+type PasswordProps = {
+  children: React.ReactNode;
+};
+
+export const Password = ({ children }: PasswordProps) => {
   const [password, setPassword] = useState<string>("");
 
   const { loading, datoResponse } = useGetPassword();
@@ -26,7 +29,7 @@ export const Password = () => {
 
   if (loading) return null;
 
-  if (datoResponse === password || datoResponse === "") return <Rehearsal />;
+  if (datoResponse === password || datoResponse === "") return children;
 
   return (
     <div className="w-full">

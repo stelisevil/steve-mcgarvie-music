@@ -2,6 +2,7 @@ export { About } from "./About";
 export { Bands } from "./Bands";
 export { Choir } from "./Choir";
 export { ChoralArrangements } from "./ChoralArrangements";
+export { ChristmasInHarmony } from "./ChristmasInHarmony";
 export { Home } from "./Home";
 export { Music } from "./Music";
 export { PopArrangements } from "./PopArrangements";

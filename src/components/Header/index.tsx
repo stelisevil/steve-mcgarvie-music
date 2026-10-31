@@ -39,6 +39,9 @@ export const Header = () => {
           >
             <MenuLink to="/choir">Choir Information</MenuLink>
             <MenuLink to="/choir/rehearsal">Rehearsal Space</MenuLink>
+            <MenuLink to="/choir/christmas-in-harmony">
+              Christmas in Harmony
+            </MenuLink>
           </Dropdown>
           -
           <Dropdown
