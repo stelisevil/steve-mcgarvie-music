@@ -21,7 +21,7 @@ export const Body = () => (
       <Route
         path="/choir/rehearsal"
         element={
-          <Password>
+          <Password key="rehearsalPassword" passwordModel="rehearsalPassword">
             <Rehearsal />
           </Password>
         }
@@ -29,7 +29,10 @@ export const Body = () => (
       <Route
         path="/choir/christmas-in-harmony"
         element={
-          <Password>
+          <Password
+            key="christmasInHarmonyPassword"
+            passwordModel="christmasInHarmonyPassword"
+          >
             <ChristmasInHarmony />
           </Password>
         }

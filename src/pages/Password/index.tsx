@@ -2,20 +2,21 @@ import wellVersed from "/well-versed.png";
 import { useState } from "react";
 
 import { HeroBanner } from "../../components/HeroBanner";
-import { useGetPassword } from "./useGetPassword";
+import { useGetPassword, type PasswordModel } from "./useGetPassword";
 import { usePasswordForm, type FormValues } from "./usePasswordForm";
 import { FormLayout } from "../../components/FormLayout";
 import { TextInput } from "../../components/TextInput";
 import { Button } from "../../components/Button";
 
 type PasswordProps = {
+  passwordModel: PasswordModel;
   children: React.ReactNode;
 };
 
-export const Password = ({ children }: PasswordProps) => {
+export const Password = ({ passwordModel, children }: PasswordProps) => {
   const [password, setPassword] = useState<string>("");
 
-  const { loading, datoResponse } = useGetPassword();
+  const { loading, datoResponse } = useGetPassword(passwordModel);
   const { context } = usePasswordForm();
 
   const onSubmit = (data: FormValues) => {
